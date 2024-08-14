@@ -1,0 +1,67 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #DBDBDB;
+}
+.full{
+    margin: 0;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 200;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+h3{
+    color: #676692;
+    font-size: 25px;
+}
+.left{
+    width: 80%;
+    padding: 10px;
+}
+.right{
+    border-left: 1px solid black;
+    padding: 30px;
+}
+i{
+    margin: 15px;
+    color: rgba(236, 120, 120, 0.685);
+}
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 190px;
+    height: 200px;
+    border-radius: 50%;
+}
+.details ul li{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    list-style: none;
+    background-color: #456d88;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 30px;
+    color: white;
+}
+.student{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 550;
+}
