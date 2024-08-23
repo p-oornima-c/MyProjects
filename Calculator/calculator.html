@@ -59,7 +59,7 @@ h1{
                     <td><input type="button" value="0" onclick="calculator.display.value += '0'"></td>
                     <td><input type="button" value="/" onclick="calculator.display.value += '/'"></td>
                     <td><input type="button" value="." onclick="calculator.display.value += '.'"></td>
-                    <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                    <td><input type="button" value="=" onclick="validateAndCalculate()"></td>
                 </tr>
                 <tr>
                     <td><input type="button" value="(" onclick="calculator.display.value += '('"></td>
@@ -70,5 +70,19 @@ h1{
             </table>
         </form>
     </center>
+    <script>
+        function validateAndCalculate() {
+            try {
+                let expression = calculator.display.value;
+                if (/[\+\-\*\/]{2,}/.test(expression) || /\.\./.test(expression) || /[^\d\+\-\*\/\.\(\)]/.test(expression)) {
+                    alert("Invalid expression");
+                    return;
+                }
+                calculator.display.value = eval(expression);
+            } catch (e) {
+                alert("Invalid expression");
+            }
+        }
+    </script>
 </body>
 </html>
